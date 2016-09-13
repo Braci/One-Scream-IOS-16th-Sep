@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroPage2Controller">
+            <connections>
+                <outlet property="m_btnBack" destination="N6z-Gd-9m1" id="TIP-gC-ykb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_galaxy.png" translatesAutoresizingMaskIntoConstraints="NO" id="NL9-oI-tAU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="256" id="Cm1-ZL-dqL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="G0V-fd-HXj">
+                    <rect key="frame" x="0.0" y="236" width="600" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="fOc-bn-hVZ"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6z-Gd-9m1" userLabel="Button - Back">
+                    <rect key="frame" x="20" y="31" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Khj-x7-ddm"/>
+                        <constraint firstAttribute="height" constant="30" id="cWV-tt-tVs"/>
+                    </constraints>
+                    <state key="normal" image="ic_back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnBack:" destination="-1" eventType="touchUpInside" id="zW1-db-9Dk"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_moon_small.png" translatesAutoresizingMaskIntoConstraints="NO" id="9oO-v1-rY6">
+                    <rect key="frame" x="289" y="35" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="6ro-Re-DsC"/>
+                        <constraint firstAttribute="height" constant="23" id="YYp-qM-g3F"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How One Scream works" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci7-eL-i3K">
+                    <rect key="frame" x="20" y="200" width="560" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="About" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTV-nE-fxL">
+                    <rect key="frame" x="20" y="150" width="56" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="rpw-ii-SNB">
+                    <rect key="frame" x="257" y="276" width="87" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flf-nP-Vqp" userLabel="Label - Seperator yellow">
+                    <rect key="frame" x="20" y="186" width="30" height="2"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.73725490199999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="Label - Seperator yellow"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="CvY-bj-uU8"/>
+                        <constraint firstAttribute="width" constant="30" id="RjT-9x-awV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65S-Vp-UYv">
+                    <rect key="frame" x="20" y="333" width="560" height="140"/>
+                    <string key="text">Download the app and keep it running in the background.
+
+If we hear your scream two times, we know you are in real danger and the app activates an alarm and calls the police on your behalf.
+
+After the police hear a recording of your scream, they have an open line to your phone.
+
+We do not listen for or record spoken words, we only ever record panic screams.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.20392156859999999" green="0.25882352939999997" blue="0.31764705879999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ci7-eL-i3K" firstAttribute="top" secondItem="flf-nP-Vqp" secondAttribute="bottom" constant="12" id="0KY-Uh-AdO"/>
+                <constraint firstItem="ci7-eL-i3K" firstAttribute="trailing" secondItem="NL9-oI-tAU" secondAttribute="trailing" constant="-20" id="5cc-BI-Yac"/>
+                <constraint firstAttribute="centerX" secondItem="rpw-ii-SNB" secondAttribute="centerX" constant="-0.5" id="7cs-p1-IFP"/>
+                <constraint firstItem="flf-nP-Vqp" firstAttribute="leading" secondItem="sTV-nE-fxL" secondAttribute="leading" id="Aoy-qt-a1e"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="leading" secondItem="sTV-nE-fxL" secondAttribute="leading" constant="-20" id="CfO-xa-SwV"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="centerX" secondItem="G0V-fd-HXj" secondAttribute="centerX" id="JMY-JF-wA8"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Knm-1q-oGp"/>
+                <constraint firstItem="flf-nP-Vqp" firstAttribute="top" secondItem="sTV-nE-fxL" secondAttribute="bottom" constant="12" id="NTM-8Z-o5S"/>
+                <constraint firstItem="ci7-eL-i3K" firstAttribute="leading" secondItem="sTV-nE-fxL" secondAttribute="leading" id="NWq-bW-WeU"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="width" secondItem="G0V-fd-HXj" secondAttribute="width" id="X45-AI-czo"/>
+                <constraint firstAttribute="trailing" secondItem="65S-Vp-UYv" secondAttribute="trailing" constant="20" id="YIk-Dc-UZp"/>
+                <constraint firstItem="9oO-v1-rY6" firstAttribute="centerY" secondItem="N6z-Gd-9m1" secondAttribute="centerY" id="caZ-xZ-WLZ"/>
+                <constraint firstItem="65S-Vp-UYv" firstAttribute="top" secondItem="rpw-ii-SNB" secondAttribute="bottom" constant="20" id="dA9-dH-6B2"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="bottom" secondItem="G0V-fd-HXj" secondAttribute="bottom" id="djT-9Y-Syz"/>
+                <constraint firstItem="9oO-v1-rY6" firstAttribute="top" secondItem="NL9-oI-tAU" secondAttribute="top" constant="35" id="hRA-5s-MdZ"/>
+                <constraint firstItem="rpw-ii-SNB" firstAttribute="top" secondItem="NL9-oI-tAU" secondAttribute="bottom" constant="20" id="hf1-Oe-5jF"/>
+                <constraint firstItem="65S-Vp-UYv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iQ9-YR-UWR"/>
+                <constraint firstItem="9oO-v1-rY6" firstAttribute="centerX" secondItem="NL9-oI-tAU" secondAttribute="centerX" id="oVO-Qc-N0y"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="leading" secondItem="N6z-Gd-9m1" secondAttribute="leading" constant="-20" id="qDB-fq-sZo"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="top" secondItem="sTV-nE-fxL" secondAttribute="top" constant="-150" id="rxv-FM-9am"/>
+                <constraint firstAttribute="trailing" secondItem="NL9-oI-tAU" secondAttribute="trailing" id="uzd-ov-6Mp"/>
+                <constraint firstItem="NL9-oI-tAU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yvn-Ym-pX2"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_galaxy.png" width="375" height="418"/>
+        <image name="bg_shadow.png" width="30" height="20"/>
+        <image name="ic_back.png" width="8" height="13"/>
+        <image name="ic_moon_small.png" width="22" height="22"/>
+    </resources>
+</document>

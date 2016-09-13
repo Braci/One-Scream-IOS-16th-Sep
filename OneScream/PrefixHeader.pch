@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  OneScream
+//
+//  Created by Anwar Almojakresh on 24/02/2016.
+//  Copyright © 2016 One Scream Ltd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import "AppEventTracker.h"
+
+#define HOME_ADDRESS_PARSE_COLOUMN @"homeAddress"
+#define WORK_ADDRESS_PARSE_COLOUMN @"workAddress"
+#define FREQUENTED_ADDRESS_PARSE_COLOUMN @"frequentedAddress"
+
+#endif /* PrefixHeader_pch */

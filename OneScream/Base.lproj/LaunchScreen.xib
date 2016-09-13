@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="iRo-ur-eOW">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_circle" translatesAutoresizingMaskIntoConstraints="NO" id="IBf-sG-Irg">
+                    <rect key="frame" x="188" y="188" width="104" height="104"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen_text" translatesAutoresizingMaskIntoConstraints="NO" id="E90-l1-VrE">
+                    <rect key="frame" x="179" y="321" width="122" height="17"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackBG" translatesAutoresizingMaskIntoConstraints="NO" id="dYF-Wc-VIw">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dYF-Wc-VIw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Ov-Zd-WJi"/>
+                <constraint firstItem="iRo-ur-eOW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3Pb-XC-943"/>
+                <constraint firstItem="IBf-sG-Irg" firstAttribute="centerY" secondItem="iRo-ur-eOW" secondAttribute="centerY" id="6Qa-WA-BHK"/>
+                <constraint firstAttribute="bottom" secondItem="dYF-Wc-VIw" secondAttribute="bottom" id="8hi-pI-VjU"/>
+                <constraint firstAttribute="trailing" secondItem="iRo-ur-eOW" secondAttribute="trailing" id="BKz-Kt-Nts"/>
+                <constraint firstItem="dYF-Wc-VIw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EXI-A7-Tgq"/>
+                <constraint firstItem="iRo-ur-eOW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fhb-rW-yJP"/>
+                <constraint firstItem="E90-l1-VrE" firstAttribute="centerX" secondItem="iRo-ur-eOW" secondAttribute="centerX" id="UfT-kf-p3i"/>
+                <constraint firstItem="E90-l1-VrE" firstAttribute="top" secondItem="IBf-sG-Irg" secondAttribute="bottom" constant="29" id="Vyh-bi-2M3"/>
+                <constraint firstAttribute="bottom" secondItem="iRo-ur-eOW" secondAttribute="bottom" id="WH6-8g-AWL"/>
+                <constraint firstAttribute="trailing" secondItem="dYF-Wc-VIw" secondAttribute="trailing" id="gA4-pZ-aq9"/>
+                <constraint firstItem="IBf-sG-Irg" firstAttribute="centerX" secondItem="iRo-ur-eOW" secondAttribute="centerX" id="ouM-Wy-Rp1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blackBG" width="900" height="600"/>
+        <image name="splash_background" width="360" height="640"/>
+        <image name="splash_screen_circle" width="104" height="104"/>
+        <image name="splash_screen_text" width="122" height="17"/>
+    </resources>
+</document>

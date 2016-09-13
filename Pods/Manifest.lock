@@ -1,0 +1,81 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Backendless-ios-SDK (3.0.28)
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - FBSDKCoreKit (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 4.8.0)
+    - FBSDKCoreKit/no-arc (= 4.8.0)
+  - FBSDKCoreKit/arc (4.8.0):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (4.8.0):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (4.8.0):
+    - FBSDKCoreKit
+  - FFGlobalAlertController (1.0.2)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GoSquared (0.6.1):
+    - GoSquared/Core (= 0.6.1)
+  - GoSquared/Core (0.6.1)
+  - JKExpandTableView (0.0.1)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - Stripe (7.0.2)
+  - Toast (3.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6.3)
+  - Backendless-ios-SDK
+  - FBSDKCoreKit (~> 4.8.0)
+  - FBSDKLoginKit (~> 4.8.0)
+  - FFGlobalAlertController
+  - FMDB
+  - GoSquared
+  - JKExpandTableView
+  - Parse
+  - Stripe
+  - Toast
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  Backendless-ios-SDK: 27e012121c92be48c4aa99a21775732f5010281e
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  FBSDKCoreKit: 66a935d17b6e00b6b64e604f2eb9b72c9ab7deb8
+  FBSDKLoginKit: d893fcbb98d854496925e9ff73c67b896982d3c4
+  FFGlobalAlertController: 40c66500ae173895085911ba19d79d045bd26742
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GoSquared: 7acaca6d4cba67014b9ccabb4240622ff5d2ade3
+  JKExpandTableView: 14834b11d68da066e30b50344fb204e55daee618
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  Stripe: d1eae5522cf993590f962ac1829a56c2096cf486
+  Toast: 32c59229abfcf41850162b83bb9259dc84372473
+
+COCOAPODS: 0.39.0
